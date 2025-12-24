@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fastion</title>
+    <!-- Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      :root {
+        --black-color: #000000;
+        --white-color: #ffffff;
+        --yellow-color: #e6c744;
+        --gray-color: #c2c8da;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      /* =========================== */
+      /* nave-bar-section */
+      /* =========================== */
+      .nave-bar-section {
+        display: flex;
+        gap: 40%;
+        margin: 2% 3% 2% 3%;
+      }
+
+      .logo {
+        display: flex;
+        gap: 10%;
+      }
+      .menu {
+        display: flex;
+        width: 100%;
+        gap: 25%;
+      }
+      .menu ul {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        list-style-type: none;
+      }
+
+      .menu ul li {
+        font-weight: 600;
+      }
+
+      .sign-btn {
+        width: 20%;
+        background-color: var(--black-color);
+        color: var(--white-color);
+      }
+
+      /* ============================ */
+      /* header-baner */
+      /* ============================ */
+
+
+       .banner {
+ border-radius: 45px;
+ display: flex;
+ background: var(--gray-color);
+ width: 84%;
+ margin: auto;
+ padding: 5% 5% 0% 5%;
+ margin-top: 30px;
+ position: relative;
+ }
+
+ .akka1 {
+ width: 65%;
+ position: relative;
+ }
+
+ .akka1 img {
+ width: 80%;
+ margin-left: 10%;
+ }
+
+ .text {
+ margin: 0%;
+ padding: 0%;
+ }
+
+ .text h1 {
+ margin: 0%;
+ padding-left: 6%;
+ font-weight: 900;
+ font-size: 50px;
+ }
+
+ .rot-1 {
+ background-color: var(--white-color);
+ transform: rotate(-3deg);
+ margin-top: 2%;
+ width: 80%
+ }
+
+ .rot-1 h1,
+ .rot-2 h1 {
+ transform: rotate(3deg);
+ }
+
+ .rot-2 {
+ background-color: var(--yellow-color);
+ transform: rotate(-3deg);
+ margin-top: 2%;
+ width: 90%;
+ }
+
+
+ .ban {
+ display: flex;
+ flex-direction: column;
+ padding-left: 1%;
+ row-gap: 20px;
+ }
+
+ .bannerbtn {
+ display: flex;
+ justify-content: left;
+ }
+
+ .bannerbtn button {
+ background-color: var(--black-color);
+ color: var(--white-color);
+ height: 50px;
+ width: 150px;
+ border-radius: 10px;
+ padding: 0px 10px 0px 10px;
+ font-size: large;
+ font-size: 22px;
+ font-weight: bolder;
+ border: none;
+ cursor: pointer;
+ }
+
+ .star1 {
+ position: absolute;
+ width: 45px;
+ right: 300px;
+ top: 100px;
+ }
+
+ .star {
+ position: absolute;
+ width: 45px;
+ }
+
+ .star2 {
+ right: 190px;
+ bottom: 80px;
+ }
+
+ .star3 {
+ bottom: 7%;
+ left: 39%;
+ }
+
+ .star4 {
+ top: 50px;
+ left: 470px;
+ }
+
+ .brands {
+ height: 20vh;
+ background-color: var(--yellow-color);
+ margin: 3% 0% 5% 0%;
+ display: flex;
+ }
+
+ .brander {
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ margin: 1.5% 8% 0% 8%;
+ height: 75%;
+ }
+
+ .brander img {
+ width: 10%;
+ }
+      /* ============================= */
+      /* app-image */
+      /* ============================= */
+      .app-image {
+        width: 100%;
+        height: 20vh;
+        background-color: var(--yellow-color);
+        display: flex;
+        gap: 4%;
+        justify-content: center;
+      }
+
+      /* ============================== */
+             /* New Arrivals */
+/* ================================== */
+        .whole-container {
+            max-width: 90%;
+            margin: auto;
+            padding: 2%;
+        }
+
+
+        .arrival-container {
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        .oru-container {
+            display: flex;
+            margin: auto;
+          gap: 10% ;
+            /* justify-content: space-between; */
+        }
+ /* ==================== */
+  /* Banner-2 */
+ .banner-2 {
+ background-color: var(--yellow-color);
+ display: flex;
+ margin-bottom: 7%;
+ }
+
+ .Akka-2 {
+ position: relative;
+
+ }
+
+ .star5 {
+ left: 17vh;
+ top: 20%;
+ }
+
+ .star6 {
+ top: 50%;
+ left: 24vh;
+ }
+
+ .star7 {
+ right: 17vh;
+ top: 15%;
+ }
+
+ .star8 {
+ right: 12%;
+ bottom: 20vh;
+ }
+
+ .ban2 {
+ width: 23%;
+ margin: auto;
+ row-gap: 20px;
+ display: flex;
+ flex-direction: column;
+ }
+
+ .payday {
+ width: 90%;
+ }
+
+ .dark {
+ font-size: large;
+ font-weight: 700;
+ }
+
+ /* Young's Favourite */
+
+ .whoole-container{
+  display: flex;
+  
+ }
+
+ .n2{
+ font-weight: 700;
+ position: relative;
+ width: 90%;
+ margin: auto;
+ z-index: 10; 
+ }
+
+ .n2::after{
+ content: " ";
+ display: inline;
+ width: 100px;
+ height: 35px;
+ background-color: var(--yellow-color);
+ position: absolute;
+ border-radius: 250% 0px 250% 0px;
+ transform: rotate(10deg);
+ margin-left: 10px;
+ left: 175px;
+ top: 15px;
+ z-index: -1;
+ }
+
+
+
+
+
+ /* Mobile */
+ .Mobile {
+ width: 90%;
+ margin: auto;
+ height: 90vh;
+ display: flex;
+ position: relative;
+ }
+
+ .download {
+ width: 28%;
+ margin: auto;
+ }
+
+ .mobile {
+ width: 40%;
+ z-index: 10;
+ }
+
+ .mobile img {
+ height: 90%;
+ margin-left: 2%;
+ }
+
+ .store-buttons {
+ display: flex;
+ gap: 12px;
+ }
+
+ .store-btn {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ padding: 10px 14px;
+ background: var(--black-color);
+ color: var(--white-color);
+ border-radius: 8px;
+ text-decoration: none;
+ font-family: Arial, sans-serif;
+ }
+
+ .store-btn i {
+ font-size: 26px;
+ }
+
+ .store-btn small {
+ font-size: 10px;
+ display: block;
+ }
+
+ .store-btn span {
+ font-size: 16px;
+ font-weight: bold;
+ }
+/* ================== */
+ /* Google Play image */
+ /* ================ */
+ .play-logo {
+ height: 40px;
+ }
+
+ /* ================== */
+ /* Hover */
+ /* ================== */
+ .store-btn:hover {
+ opacity: 0.85;
+ }
+
+ .circle {
+ border-radius: 50%;
+ position: absolute;
+ }
+
+ .circle1 {
+ background-color: var(--gray-color);
+ height: 20px;
+ width: 20px;
+ top: 90px;
+ right: 470px;
+ }
+
+ .circle2 {
+ background-color: var(--yellow-color);
+ height: 30px;
+ width: 30px;
+ top: 90px;
+ right: 35px;
+ }
+
+ .circle3 {
+ background-color: var(--yellow-color);
+ height: 25px;
+ width: 25px;
+ bottom: 150px;
+ right: 500px;
+ }
+
+ .circle4 {
+ background-color: var(--gray-color);
+ height: 15px;
+ width: 15px;
+ bottom: 240px;
+ right: 35px;
+ }
+
+ .circle5 {
+ border: 0.5px solid var(--gray-color);
+ top: 10vh;
+ left: 97.5vh;
+ width: 420px;
+ height: 420px;
+ z-index: -1;
+ }
+
+ .circle6 {
+ border: 0.5px solid var(--gray-color);
+ top: 15vh;
+ left: 103.5vh;
+ width: 350px;
+ height: 350px;
+ z-index: -1;
+ }
+
+ .circle7 {
+ border: 0.5px solid var(--gray-color);
+ top: 20vh;
+ left: 108.5vh;
+ width: 280px;
+ height: 280px;
+ z-index: -1;
+ }
+
+
+
+
+/* ===================== */
+ /* Community */
+ /* =================== */
+
+ .community {
+ background-color: var(--yellow-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: var(--white-color);
+ }
+
+ .community h1,
+ .community p {
+ color: var(--white-color);
+ text-overflow: clip;
+ text-align: center;
+ }
+
+ .community_box {
+ width: 40%;
+ margin: 5% 0% 7% 0%;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
+ }
+
+ .community_box h1 {
+ font-weight: 900;
+ }
+
+ .input {
+ height: 40px;
+ width: 250px;
+ border-radius: 5px;
+ border: 0px;
+ padding-left: 3%;
+ }
+
+ .search {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ }
+
+ .btn {
+ position: absolute;
+ right: 25%;
+ top: 0%;
+ }
+
+ .send {
+ background-color: var(--black-color);
+ color: var(--white-color);
+ border-radius: 5px;
+ outline: none;
+ cursor: pointer;
+ height: 30px;
+ margin-top: 7%;
+ width: 60px;
+ border: none;
+ }
+
+
+
+      /* ================ */
+      /* Footer */
+      /* ============= */
+
+        .Footer {
+            background-color: var(--black-color);
+            color:  var(--white-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 5% 8% 5% 8%;
+        }
+
+        .f1 {
+            color: var(--white-color);
+            width: 30%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .icon {
+            width: 42px;
+            height: 42px;
+            background: var(--yellow-color);
+            color: var(--black-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+            background: var(--yellow-color);
+        }
+
+        .f2,
+        .f3,
+        .f4 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .p1 {
+            color: var(--gray-color);
+        }
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- ======================= -->
+    <!-- nave-bar-section  -->
+    <!-- ======================= -->
+    <div class="nave-bar-section">
+      <div class="logo">
+        <img src="assets/Vector.svg" alt="logo" />
+        <img src="assets/FASHION.svg" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>CATALOGUE</li>
+          <li>FASHION</li>
+          <li>FAVOURITE</li>
+          <li>LIFESTYLE</li>
+        </ul>
+        <button class="sign-btn">SIGN UP</button>
+      </div>
+    </div>
+    <!-- ======================== -->
+    <!-- header-baner -->
+    <!-- ===================== -->
+   
+      <div class="banner">
+ <div class="ban">
+ <div class="text">
+ <div class="rot-1">
+ <h1>LET’S</h1>
+ </div>
+ <h1>EXPLORE</h1>
+ <div class="rot-2">
+ <h1>UNIQUE</h1>
+ </div>
+ <h1>CLOTHES.</h1>
+ </div>
+ <div class="para">
+ <p>Live for Influential and Innovative fashion!</p>
+ </div>
+ <div class="bannerbtn">
+ <button class="button">Shop Now</button>
+ </div>
+ </div>
+ <!-- Stars -->
+ <img src="assets/Star 3.png" alt="" class="star1 star">
+ <img src="assets/Star 3.png" alt="" class="star2 star">
+ <img src="assets/Star 3.png" alt="" class="star3 star">
+ <img src="assets/Star 3.png" alt="" class="star4 star">
+
+ <!-- Banner Akka-1 -->
+ <div class="akka1">
+ <img src="assets/banner_Akka1.png" alt="">
+ </div>
+ </div>
+ </div>
+   
+
+    <!-- ======================= -->
+    <!-- app-image -->
+    <!-- ======================= -->
+
+    <div class="app-image">
+      <img src="assets/h&m.png" alt="h&w" />
+      <img src="assets/obey.png" alt="obey" />
+      <img src="assets/shopify.png" alt="shopify" />
+      <img src="assets/locoste.png" alt="locoste" />
+      <img src="assets/levis.png" alt="levis" />
+      <img src="assets/amazon.png" alt="amazon" />
+    </div>
+
+    <!-- ====================== -->
+    <!-- NEW ARRIVALS -->
+    <!-- ==================== -->
+         <!-- 3 cards -->
+    <div class="whole-container">
+        <div>
+            <h1>NEW ARRIVALS</h1>
+        </div>
+        <div class="arrival-container">
+            <div style="display: flex; flex-direction: column;">
+                <div style="width: 350px;"><img src="assets/Rectangle 20.png" alt="Rectangle" style="width: 350px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div>
+                            <h2>Hoodies & Sweetshirt</h2>
+                        </div>
+                        <div>
+                            <p>Explore Now!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Arrow 1.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; flex-direction: column;">
+                <div style="width: 350px;"><img src="assets/Rectangle 21.png" alt="Rectangle" style="width: 350px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div>
+                            <h2>Hoodies & Sweetshirt</h2>
+                        </div>
+                        <div>
+                            <p>Explore Now!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Arrow 1.svg" alt="Arrow">
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <div style="width: 400px;"><img src="assets/Rectangle 22.png" alt="Rectangle" style="width: 350px;">
+                </div>
+                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div>
+                            <h2>Hoodies & Sweetshirt</h2>
+                        </div>
+                        <div>
+                            <p>Explore Now!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Arrow 1.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!--================  -->
+          <!-- Banner-2 =============-->
+           <!--================ -->
+ <div class="banner-2">
+ <div class="Akka-2">
+
+  <!-- =========== -->
+ <!-- Stars -->
+  
+ <img src="assets/Star 3.png" alt="" class="star5 star">
+ <img src="assets/Star 3.png" alt="" class="star6 star">
+ <img src="assets/Star 3.png" alt="" class="star7 star">
+ <img src="assets/Star 3.png" alt="" class="star8 star">
+ <img src="assets/banner_Akka2.png" alt="">
+
+ </div>
+ <div class="text ban2">
+ <div>
+ <div class="rot-1 payday">
+ <h1>PAYDAY</h1>
+ </div>
+ <div>
+ <h1>SALENOW</h1>
+ </div>
+ </div>
+
+ <div>
+ <p>Spend minimal $100 get 30% off voucher code for your next purchase
+ </p>
+ </div>
+ <div>
+ <p class="dark">1 June - 10 June 2021</p>
+ <p>*Terms & Conditions apply</p>
+ </div>
+ <div class="bannerbtn">
+ <button id="button">Shop Now</button>
+ </div>
+ </div>
+ </div>
+
+ <!-- =================== -->
+ <!-- Young's Favourite -->
+  <!-- =============== -->
+
+ <div class="YoungFavourite">
+  <!-- Young Sister -->
+
+
+    <div class="whole-container">
+        <div>
+            <h1>NEW ARRIVALS</h1>
+        </div>
+        <div class="oru-container">
+            <div style="display: flex; flex-direction: column;">
+                <div><img src="assets/Rectangle 49.png" alt="Rectangle" style="width: 500px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div>
+                            <h2>Hoodies & Sweetshirt</h2>
+                        </div>
+                        <div>
+                            <p>Explore Now!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Arrow 1.svg" alt="Arrow">
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+            <div style="display: flex; flex-direction: column;">
+                <div><img src="assets/Rectangle 50.png" alt="Rectangle" style="width: 500px;">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <div>
+                        <div>
+                            <h2>Hoodies & Sweetshirt</h2>
+                        </div>
+                        <div>
+                            <p>Explore Now!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/Arrow 1.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+ 
+
+ <!-- Mobile -->
+ <div class="Mobile">
+ <div class="download">
+ <h1>DOWNLOAD APP & GET VOUCHER!</h1>
+ <p class="p1">Get 30% off for first transaction using Rondovision mobile app for now.</p>
+ <div class="store-buttons">
+ <a href="https://www.apple.com/app-store/" target="_blank" class="store-btn apple">
+ <i class="fa-brands fa-apple"></i>
+ <div>
+ <small>Download on the</small>
+ <span>App Store</span>
+ </div>
+ </a>
+
+ <a href="https://play.google.com/store" target="_blank" class="store-btn google">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+ alt="Google Play" class="play-logo">
+ </a>
+ </div>
+
+ </div>
+ 
+ <div class="mobile">
+ <img src="assets/Mobile app.png" alt="">
+ <div class="circle1 circle"></div>
+ <div class="circle2 circle"></div>
+ <div class="circle3 circle"></div>
+ <div class="circle4 circle"></div>
+ <div class="circle5 circle"></div>
+ <div class="circle6 circle"></div>
+ <div class="circle7 circle"></div>
+
+ </div>
+
+
+ </div>
+
+ <!-- Community -->
+ <div class="community">
+ <div class="community_box">
+ <h1>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h1>
+ <p>Type your email down below and be young wild generation</p>
+ <div class="search">
+ <input type="text" class="input" placeholder="Add your Email here">
+ <div class="btn"><button class="send">Send</button></div>
+ </div>
+
+ </div>
+
+ </div>
+
+
+    <!-- =============== -->
+     <!-- Footer -->
+      <!-- ================= -->
+      
+    <div class="Footer">
+        <div class="f1">
+            <div style="width: 80%;display: flex;flex-direction: column;row-gap: 20px;">
+                <h1>FASHION</h1>
+                <p class="p1">Complete your style with awesome clothes from us.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="icon fb">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank" class="icon ig">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="icon tw">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com" target="_blank" class="icon ln">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="f2">
+            <p>Company</p>
+            <p class="p1">About</p>
+            <p class="p1">Contact Us</p>
+            <p class="p1">Support</p>
+            <p class="p1">Careers</p>
+        </div>
+        <div class="f3">
+            <p>Quick Link</p>
+            <p class="p1">Share Location</p>
+            <p class="p1">Orders Tracking</p>
+            <p class="p1">Size Guide</p>
+            <p class="p1">FAQs</p>
+        </div>
+        <div class="f4">
+            <p>Legal</p>
+            <p class="p1">Terms & Conditions</p>
+            <p class="p1">Privacy Policy</p>
+        </div>
+    </div>
+  </body>
+</html>
