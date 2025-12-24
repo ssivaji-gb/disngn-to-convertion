@@ -16,6 +16,7 @@
         --white-color: #ffffff;
         --yellow-color: #e6c744;
         --gray-color: #c2c8da;
+        --banner1:#F4F6F5;
       }
       * {
         margin: 0;
@@ -68,7 +69,7 @@
        .banner {
  border-radius: 45px;
  display: flex;
- background: var(--gray-color);
+ background: var(--banner1);
  width: 84%;
  margin: 2% 3% 2% 3%;
  padding: 5% 5% 0% 5%;
@@ -479,6 +480,10 @@
  border-radius: 5px;
  border: 0px;
  padding-left: 3%;
+ display: flex;
+
+ align-items: center;
+
  }
 
  .search {
@@ -499,10 +504,15 @@
  border-radius: 5px;
  outline: none;
  cursor: pointer;
- height: 30px;
- margin-top: 7%;
- width: 60px;
+ height: 40px;
+ /* margin-top: 8%; */
+ width: 80px;
  border: none;
+ }
+
+ .send:hover{
+    background-color: var(--yellow-color);
+ color: var(--white-color);
  }
 
 
